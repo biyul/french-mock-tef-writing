@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEF – Expression écrite (entraînement)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <button id="lockBtn" class="lock-btn" type="button">
+        <span id="lockIcon" class="lock-icon">🔒</span>
+        <span id="lockLabel">Déverrouiller</span>
+      </button>
+
+      <div class="logo">
+        <span class="asterisk">@</span>
+        <span class="logo-text">
+          <span class="logo-line logo-blue">PAS DU FRANÇAIS</span>
+          <span class="logo-line logo-red">AFFAIRES</span>
+        </span>
+      </div>
+
+      <div id="timerBox" class="timer-box">25:00</div>
+    </header>
+
+    <section class="info">
+      <p class="session-line">Session n°7021704 du 28/02/2025</p>
+      <p>Candidat n°2251367 - VIRTUEL Candidat 1</p>
+      <p>Type Epreuve : TEF Canada</p>
+    </section>
+
+    <main class="exam-box">
+      <p class="prompt-title">Voici le début d'un article de presse ;</p>
+      <p class="prompt-instruction">
+        Terminez cet article : en ajoutant à la suite un texte de 80 mots minimum ; en faisant plusieurs paragraphes.
+      </p>
+
+      <div id="wordCount" class="word-count">0 mot</div>
+
+      <div id="keyboard" class="keyboard">
+        <button type="button" class="key" data-lower="â" data-upper="Â">â</button>
+        <button type="button" class="key" data-lower="à" data-upper="À">à</button>
+        <button type="button" class="key" data-lower="ç" data-upper="Ç">ç</button>
+        <button type="button" class="key" data-lower="é" data-upper="É">é</button>
+        <button type="button" class="key" data-lower="è" data-upper="È">è</button>
+        <button type="button" class="key" data-lower="ê" data-upper="Ê">ê</button>
+        <button type="button" class="key" data-lower="ë" data-upper="Ë">ë</button>
+        <button type="button" class="key" data-lower="œ" data-upper="Œ">œ</button>
+        <button type="button" class="key" data-lower="ï" data-upper="Ï">ï</button>
+        <button type="button" class="key" data-lower="î" data-upper="Î">î</button>
+        <button type="button" class="key" data-lower="ô" data-upper="Ô">ô</button>
+        <button type="button" class="key" data-lower="ù" data-upper="Ù">ù</button>
+        <button type="button" class="key" data-lower="û" data-upper="Û">û</button>
+        <button type="button" class="key" data-lower="ü" data-upper="Ü">ü</button>
+        <button type="button" class="key" data-char="«">«</button>
+        <button type="button" class="key" data-char="»">»</button>
+        <button type="button" class="key" data-char="'">'</button>
+        <button type="button" class="key" data-char="?">?</button>
+        <button type="button" class="key" data-char="!">!</button>
+        <button type="button" class="key" data-char=":">:</button>
+        <button type="button" class="key" data-char=";">;</button>
+        <button type="button" class="key" data-char="(">(</button>
+        <button type="button" class="key" data-char=")">)</button>
+        <button type="button" class="key" data-char=".">.</button>
+        <button type="button" class="key" data-char=",">,</button>
+        <button type="button" class="key" data-char="€">€</button>
+        <button type="button" class="key" data-char="$">$</button>
+        <button type="button" class="key" data-char="%">%</button>
+        <button id="shiftKey" class="key shift-key" type="button">⇧ shift</button>
+      </div>
+
+      <label for="editor"></label><textarea id="editor" class="editor" disabled spellcheck="false"></textarea>
+    </main>
+
+    <footer class="watermark" aria-hidden="true">
+      <div class="person"></div>
+      <div class="person"></div>
+      <div class="person"></div>
+      <div class="person"></div>
+      <div class="person"></div>
+      <div class="person"></div>
+      <div class="person"></div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
